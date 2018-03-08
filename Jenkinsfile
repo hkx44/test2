@@ -6,5 +6,10 @@ pipeline {
         echo 'Step 1 executed!'
       }
     }
+    stage('Step 2') {
+      steps {
+        sh 'ping localhost'
+      }
+    }
   }
 }
