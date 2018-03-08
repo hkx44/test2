@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Step 2') {
       steps {
-        sh 'ping localhost'
+        echo 'Step 2 executed!'
       }
     }
   }
