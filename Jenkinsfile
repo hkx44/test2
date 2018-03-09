@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Step 1') {
       steps {
-        echo 'Step 1 executed! $KOMUNIKAT'
+        echo 'Step 1 executed! ${KOMUNIKAT}'
       }
     }
     stage('Step 2') {
