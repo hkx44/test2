@@ -11,5 +11,10 @@ pipeline {
         echo 'Step 2 executed!'
       }
     }
+    stage('Build_job') {
+      steps {
+        build 'ssh_test'
+      }
+    }
   }
 }
